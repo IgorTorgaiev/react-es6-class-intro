@@ -11,19 +11,22 @@
 
     <!-- 1. React ES6. Topic: "Class" -->
 
-    <!-- Let's have a look how it works. Therefore, we will start from something simple and elementary -->
+    <!-- Method in Class -->
     
     <script>
-    class Music {
-      constructor(group) {
-        this.band = group;
+    class Car {
+      constructor(model) {
+        this.type = model;
+      }
+      extend() {
+        return 'I have bought the new car the name of which is ' + this.type + ' and the model is "Range Rover".';
       }
     }
-    favouritegroup = new Music("One of my most favourite rock-groups is 'Quuen'. ");
-    document.write(favouritegroup.band);
+    newcar = new Car("Land Rover");
+    document.write(newcar.extend());
     </script>
 
-    <!-- As you can see above, that is the so-call introduction into the Class topic -->
+    <!-- Now we have used the Method in Class as shown above -->
 
   </body>
 </html>
